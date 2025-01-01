@@ -59,6 +59,11 @@ function fechtheData(finder){
   const UserDB = JSON.parse(localStorage.getItem("UserDB"))
   const databox = document.getElementById('databox');
   databox.innerHTML=``;
+  if(UserDB[finder].appdata.length==0){
+    let temp = '☹'
+    databox.innerHTML=`<h1>No Data Found ${temp}</h1>`;
+    return;
+  }
   let i =0;
   UserDB[finder].appdata.forEach(element => {
     let div = document.createElement('div');
@@ -92,8 +97,6 @@ localStorage.setItem("UserDB", JSON.stringify(UserDB));
 fechtheData(userindex)
 }
 function add(index){
-alert("call the add");
-console.log(index)
 const appname = document.getElementById('appname').value.trim();
 const appusername = document.getElementById('appusername').value.trim();
 const apppassword = document.getElementById('apppassword').value.trim();
