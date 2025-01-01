@@ -141,6 +141,66 @@ header {
     border: none;
     cursor: pointer;
 }
+#main{
+    padding-left: 1.5rem;
+    background-color: antiquewhite;
+}
+#apppassword,#appusername,#appname{
+    margin: .5rem;
+    border: 0.25px solid black;
+}
+#finalsubbmit{
+    margin-bottom:.1rem;
+}
+.inputdiv{
+   height: 42vh;
+   min-width: 17vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-evenly;
+   margin: 1% 2% 1% 2%;
+   border-radius: 4%;
+   box-shadow: 0 0 12px black;
+   background-color: rgba(192, 216, 237, 0.277);
+}
+.inputdiv .para{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.inputdiv .para p{
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.inputdiv h2{
+    font-size: 1rem;
+}
+.inputdiv button{
+   height: 6vh;
+   width: 7vw;
+   border-radius: 12px;
+   background: linear-gradient(to bottom, #f34814 0%, #fcd10f 100%);
+   border: transparent;
+   box-shadow: 0 0 17px rgb(170, 164, 164);
+}
+.inputdiv img{
+    height: 100px;
+    width: 100px;
+}
+p{
+    line-height: 1rem;
+}
+.databox{
+    border: 1px solid rgba(0, 0, 0, 0.115);
+    border-radius: 12px;
+    min-height: 45vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgba(240, 248, 255, 0.444);
+}
 
 /* For Responsiveness of the page */
 
